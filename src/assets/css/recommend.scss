@@ -1,0 +1,23 @@
+// 导入公共变量
+@import './variable.scss';
+
+.recommend-container {
+    .ant-carousel {
+        img {
+            width: 100%;
+        }
+        // 解决轮播图索引按钮层级问题
+        .slick-dots {
+            z-index: 1;
+        }
+    }
+    .section {
+        padding: 10px;
+        h3 {
+            border-left: 3px solid $baseColor;
+            padding-left: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+// 导入公共变量
+@import './variable.scss';
+
+.header{
+    background:$baseColor;
+    .ant-page-header-heading-title {
+        color:#FFF
+    }
+    // 下载按钮
+    .btn-download {
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        background: #FFF;
+        color:$baseColor;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 20px;
+    }
+}
+// 主导航
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #DDD;
+    background: #FFF;
+    a {
+        flex: 1;
+        color:$fontColor;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        // 对父级选择器的引用
+        &.active {
+            border-bottom: 2px solid $baseColor;
+        }
+    }
+}
